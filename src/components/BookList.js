@@ -19,14 +19,14 @@ export default function BookList() {
       <div className="bookList-container">
         <div className="book-item">
           {booklist.map((item) => (
-          <li key={item.id}>
-            {item.title}
-            <br />
-            {item.Author}
-            <br />
-            <br />
-          </li>
-        ),)}
+            <li key={item.id}>
+              {item.title}
+              <br />
+              {item.Author}
+              <br />
+              <br />
+            </li>
+          ))}
         </div>
         <hr />
       </div>
