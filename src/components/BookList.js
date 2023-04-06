@@ -11,26 +11,26 @@ export default function BookList() {
     {
       title: 'Capital in the Twenty-First Century',
       Author: 'Suzanne Collins',
-    }
+    },
   ];
 
   return (
     <div className="main-container">
-    <div className="bookList-container">
+      <div className="bookList-container">
       <div className="book-item">
         {booklist.map((item) => (
-        <li key={item.id}>
-        {item.title}
-        <br></br>
-        {item.Author}
-        <br></br>
-        <br></br></li>
-      )
+          <li key={item.id}>
+          {item.title}
+          <br></br>
+          {item.Author}
+          <br></br>
+          <br></br></li>
+        ),
       )}
       </div>
       <hr></hr>
-    </div>
-    <div className="form-container">
+      </div>
+      <div className="form-container">
       <h3 className="form-title">ADD NEW BOOK</h3>
       <form className="addabook">
         <input type="text" name="title" placeholder="Book title" />
