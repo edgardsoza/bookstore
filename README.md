@@ -63,7 +63,7 @@ First, make sure you have Node.js installed on your machine. Installation of Git
 ### Setup
 
 git clone https://github.com/edgardsoza/bookstore
-cd math-magicians
+cd bookstore
 
 Clone this repository to your desired folder: https://github.com/edgardsoza/bookstore
 
