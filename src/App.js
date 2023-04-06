@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BookList from './components/BookList';
 import Categories from './components/Categories';
 import NavBar from './components/Header';
@@ -9,9 +9,9 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-      <Route path="/" element={<BookList/> } />
-      <Route path="/categories" element={<Categories/> } />
-    </Routes>
+        <Route path="/" element={<BookList />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
     </BrowserRouter>
   );
 }
