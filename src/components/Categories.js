@@ -1,5 +1,5 @@
 export default function Categories() {
-    return (
+  return (
       <div className="check-status">
         <input type="submit" value="Check Status" />
       </div>

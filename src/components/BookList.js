@@ -30,7 +30,7 @@ export default function BookList() {
       </div>
       <hr></hr>
     </div>
-      <div className="form-container">
+    <div className="form-container">
       <h3 className="form-title">ADD NEW BOOK</h3>
       <form className="addabook">
         <input type="text" name="title" placeholder="Book title" />
