@@ -23,9 +23,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math Magicians<a name="about-project"></a>
+# 📖 Bookstore<a name="about-project"></a>
 
-Math Magicians project has the objective to understand how to use medium-fidelity wireframes to create a UI. I will start using React to create a SPA that allow users to make simple calculations and read a random math-related quote.
+This project will lay the foundations for your Bookstore website. I will start using React and Redux to create a SPA that allow users to create new book inputs and modifiied the existing ones.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,28 +38,15 @@ Math Magicians project has the objective to understand how to use medium-fidelit
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://api-ninjas.com/api/quotes">Quotes API</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- Calculator can be used to make simple math operations.
-- A quote is gotten from an API and shown in the page. 
-- Users can go from different sections in the SPA.
+- List of books shown in the page. 
+- There is a form to add more books to the list. 
+- Users can go to different sections in the SPA.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://math-magicians-edgardsoza.onrender.com/)
 
 <!-- GETTING STARTED -->
 
@@ -75,10 +62,10 @@ First, make sure you have Node.js installed on your machine. Installation of Git
 
 ### Setup
 
-git clone https://github.com/edgardsoza/math-magicians.git
+git clone https://github.com/edgardsoza/bookstore
 cd math-magicians
 
-Clone this repository to your desired folder: https://github.com/edgardsoza/math-magicians.
+Clone this repository to your desired folder: https://github.com/edgardsoza/bookstore
 
 ### Install
 
@@ -109,20 +96,14 @@ npm run build
 - Twitter: [@soza_edgard](https://twitter.com/soza_edgard)
 - LinkedIn: [Edgard Soza Sobalvarro](https://www.linkedin.com/in/edgard-soza-sobalvarro/)
 
-👤 **Muhammad Davlatov**
-
-- GitHub: [Muhammad0602](https://github.com/Muhammad0602)
-- Twitter: [Muhammad Davlatov](https://twitter.com/MuhammadDavla20)
-- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add more complicated math operations
-- [ ] Add transitions to page interfaces.
+- [ ] Styling of the page would be improved.
+- [ ] Calling an API to show more data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +113,7 @@ npm run build
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check https://github.com/edgardsoza/math-magicians/issues.
+Feel free to check https://github.com/edgardsoza/bookstore
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
