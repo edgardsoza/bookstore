@@ -1,4 +1,4 @@
-import { FaTrash } from "react-icons/fa";
+import { FaTrash } from 'react-icons/fa';
 
 const booklist = [
   {
@@ -27,12 +27,12 @@ export default function BookItem() {
           <br />
           {item.Author}
           <br />
-          <button type="submit"><FaTrash /></button>
+          <button value="Delete" type="submit"><FaTrash /></button>
           <br />
           <br />
         </li>
       ))}
-        <hr />
+      <hr />
     </ul>
   );
 }
