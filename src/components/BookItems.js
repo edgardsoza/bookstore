@@ -19,7 +19,7 @@ const booklist = [
 ];
 
 export default function BookItem() {
-    return (
+  return (
     <ul className="book-item">
       {booklist.map((item) => (
         <li key={item.id}>
@@ -27,7 +27,7 @@ export default function BookItem() {
           <br />
           {item.Author}
           <br />
-          <button value="Delete" type="submit"><FaTrash /></button>
+          <button className="delete-button" type="button"><FaTrash /></button>
           <br />
           <br />
         </li>
