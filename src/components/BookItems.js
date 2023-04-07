@@ -27,7 +27,7 @@ export default function BookItem() {
           <br />
           {item.Author}
           <br />
-          <button className="delete-button" type="button"><FaTrash /></button>
+          <button className="delete-button" aria-label="Delete-button" type="button"><FaTrash /></button>
           <br />
           <br />
         </li>
