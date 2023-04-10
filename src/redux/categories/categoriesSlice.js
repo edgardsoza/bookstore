@@ -1,7 +1,7 @@
 const initialState = { categories: [] };
 
 const categoriesReducer = (state = initialState) => (
-    state
-  );
+  state
+);
 
 export default categoriesReducer;
