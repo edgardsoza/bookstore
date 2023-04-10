@@ -1,4 +1,3 @@
-import { createSlice } from '@reduxjs/toolkit';
 const ADD_BOOK = "ADD_BOOK";
 const REMOVE_BOOK = "REMOVE_BOOK";
 
@@ -14,7 +13,7 @@ export const removeBook = (itemIndex) => ({
     payload: itemIndex
 });
 
-const myReducer = (state = initialState, action) => {
+const booksReducer = (state = initialState, action) => {
     switch (action.type) {
       case ADD_BOOK:
         return {
@@ -33,4 +32,4 @@ const myReducer = (state = initialState, action) => {
     }
   };
   
-  export default myReducer;
+  export default booksReducer;
