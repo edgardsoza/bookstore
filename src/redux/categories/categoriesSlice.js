@@ -1,7 +1,7 @@
 const initialState = { categories: [] };
 
-  const categoriesReducer = (state = initialState, action) => {
-    return 'Under Construction'
-  };
-  
-  export default categoriesReducer;
+const categoriesReducer = (state = initialState) => {
+  return state;
+};
+
+    export default categoriesReducer;
