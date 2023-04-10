@@ -1,5 +1,5 @@
-const ADD_BOOK = "ADD_BOOK";
-const REMOVE_BOOK = "REMOVE_BOOK";
+const ADD_BOOK = 'ADD_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const initialState = { books: [] };
 
@@ -9,24 +9,26 @@ export const addBook = (item) => ({
 });
 
 export const removeBook = (itemIndex) => ({
-    type: REMOVE_BOOK,
-    payload: itemIndex,
+  type: REMOVE_BOOK,
+  payload: itemIndex,
 });
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BOOK:
+    case ADD_BOOK: {
       return {
         ...state,
-        items: [...state.items, action.payload]
+        items: [...state.items, action.payload],
       };
-      case REMOVE_BOOK:
+    }
+    case REMOVE_BOOK: {
       const newItems = [...state.items];
       newItems.splice(action.payload, 1);
       return {
         ...state,
         items: newItems,
       };
+    }
     default:
       return state;
   }

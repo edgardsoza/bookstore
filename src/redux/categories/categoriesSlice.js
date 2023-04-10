@@ -1,7 +1,7 @@
 const initialState = { categories: [] };
 
-const categoriesReducer = (state = initialState) => {
-  return state;
-};
+const categoriesReducer = (state = initialState) => (
+    state
+  );
 
-    export default categoriesReducer;
+export default categoriesReducer;
