@@ -1,10 +1,10 @@
 import { FaTrash } from 'react-icons/fa';
+import { useSelector, useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
-import { useSelector, useDispatch } from "react-redux"
 
 export default function BookItem() {
   const dispatch = useDispatch();
-  const booklist = useSelector(state => state.books);
+  const booklist = useSelector((state) => state.books);
 
   return (
     <ul className="book-item">
