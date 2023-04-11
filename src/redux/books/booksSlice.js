@@ -30,11 +30,11 @@ const bookSlice = createSlice({
         state.push(action.payload);
       },
       prepare: ({ title, author }) => ({
-          payload: {
-            item_id: nextBookId + 1,
-            title,
-            author,
-          },
+        payload: {
+          item_id: nextBookId + 1,
+          title,
+          author,
+        },
       }),
     },
     removeBook(state, action) {
