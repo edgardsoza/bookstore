@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-let nextBookId = 1;
+const nextBookId = 1;
 
 const bookSlice = createSlice({
   name: 'books',
@@ -10,7 +10,7 @@ const bookSlice = createSlice({
       title: 'The Great Gatsby',
       author: 'John Smith',
       category: 'Fiction',
-    }, 
+    },
     {
       item_id: 'item2',
       title: 'Anna Karenina',
@@ -29,7 +29,7 @@ const bookSlice = createSlice({
       reducer: (state, action) => {
         state.push(action.payload);
       },
-      prepare: ({ title, author }) => {
+      prepare: (({ title, author }) => {
         return {
           payload: {
             item_id: nextBookId + 1,
@@ -37,7 +37,7 @@ const bookSlice = createSlice({
             author,
           },
         };
-      },
+      }),
     },
     removeBook(state, action) {
       const bookId = action.payload;
