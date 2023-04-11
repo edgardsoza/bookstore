@@ -29,14 +29,12 @@ const bookSlice = createSlice({
       reducer: (state, action) => {
         state.push(action.payload);
       },
-      prepare: (({ title, author }) => {
-        return {
+      prepare: ({ title, author }) => ({
           payload: {
             item_id: nextBookId + 1,
             title,
             author,
           },
-        };
       }),
     },
     removeBook(state, action) {
