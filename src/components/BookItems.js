@@ -1,33 +1,20 @@
 import { FaTrash } from 'react-icons/fa';
-
-const booklist = [
-  {
-    id: 1,
-    title: 'The Hunger Games',
-    Author: 'Suzanne Collins',
-  },
-  {
-    id: 2,
-    title: 'Dune',
-    Author: 'Frank Herbert',
-  },
-  {
-    id: 3,
-    title: 'Capital in the Twenty-First Century',
-    Author: 'Suzanne Collins',
-  },
-];
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
 
 export default function BookItem() {
+  const dispatch = useDispatch();
+  const booklist = useSelector((state) => state.books);
+
   return (
     <ul className="book-item">
       {booklist.map((item) => (
-        <li key={item.id}>
+        <li key={item.item_id}>
           {item.title}
           <br />
-          {item.Author}
+          {item.author}
           <br />
-          <button className="delete-button" aria-label="Delete-button" type="button"><FaTrash /></button>
+          <button className="delete-button" aria-label="Delete-button" type="button" onClick={() => dispatch(removeBook(item.item_id))}><FaTrash /></button>
           <br />
           <br />
         </li>
