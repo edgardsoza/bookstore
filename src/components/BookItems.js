@@ -1,18 +1,27 @@
+import { useEffect } from 'react';
 import { FaTrash } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBook, fetchBooks } from '../redux/books/booksSlice';
 
 export default function BookItem() {
   const dispatch = useDispatch();
-  const booklist = useSelector((state) => state.books);
+  const bookData = useSelector((state) => state.books);
+  const booksArr = Object.keys(bookData).map((key) => ({
+    item_id: key,
+    ...bookData[key]
+  }));
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  },);
 
   return (
     <ul className="book-item">
-      {booklist.map((item) => (
+      {booksArr.map((item) => (
         <li key={item.item_id}>
-          {item.title}
+          {item[0].title}
           <br />
-          {item.author}
+          {item[0].author}
           <br />
           <button className="delete-button" aria-label="Delete-button" type="button" onClick={() => dispatch(removeBook(item.item_id))}><FaTrash /></button>
           <br />
