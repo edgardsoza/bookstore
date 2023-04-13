@@ -13,7 +13,6 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -76,14 +75,6 @@ npm install
 To run the project, execute the following command:
 
 npm start
-
-### Deployment
-
-You can deploy this project using:
-
-npm run build
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
