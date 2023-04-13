@@ -24,10 +24,10 @@ const bookSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchBooks.fulfilled, (state, action) => {
+      .addCase(fetchBooks.fulfilled, ((state, action) => {
         return action.payload;
-      })
-    }
+      }));
+  },
 });
 
 export const { addBook } = bookSlice.actions;

@@ -8,12 +8,13 @@ export default function BookItem() {
   const bookData = useSelector((state) => state.books);
   const booksArr = Object.keys(bookData).map((key) => ({
     item_id: key,
-    ...bookData[key]
+    ...bookData[key],
   }));
 
   useEffect(() => {
     dispatch(fetchBooks());
-  },);
+  },
+);
 
   return (
     <ul className="book-item">
