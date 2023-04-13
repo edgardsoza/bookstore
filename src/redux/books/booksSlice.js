@@ -24,9 +24,9 @@ const bookSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchBooks.fulfilled, (state, action) => {
-        return action.payload;
-      });
+      .addCase(fetchBooks.fulfilled, (state, action) =>
+        action.payload
+      );
   },
 });
 

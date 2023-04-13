@@ -12,8 +12,8 @@ export default function AddForm() {
     e.preventDefault();
     const URL_API = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/U8RwVDIGkwFcL15zoJWb/books';
     const book = {
-      title, author, category: 'fiction', item_id: Math.floor(Math.random() * 100000)
-  };
+      title, author, category: 'fiction', item_id: Math.floor(Math.random() * 100000),
+    };
     await axios.post(URL_API, book);
     setTitle('');
     setAuthor('');
