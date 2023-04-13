@@ -14,7 +14,7 @@ export default function BookItem() {
   useEffect(() => {
     dispatch(fetchBooks());
   },
-);
+  );
 
   return (
     <ul className="book-item">
