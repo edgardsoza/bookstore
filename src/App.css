@@ -130,14 +130,6 @@ body {
   align-items: center;
 }
 
-.button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  color: var(--azure);
-  cursor: pointer;
-}
-
 .left-item-container {
   width: 80%;
   display: flex;
@@ -215,6 +207,9 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: var(--cool-blue);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .progress-percentage {
@@ -227,7 +222,7 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black-two); 
+  color: var(--black-two);
 }
 
 .completed-bar {
@@ -255,7 +250,7 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black-two); 
+  color: var(--black-two);
 }
 
 .right-item-container {
