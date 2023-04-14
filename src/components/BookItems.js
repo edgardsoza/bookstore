@@ -57,9 +57,9 @@ export default function BookItem() {
             </div>
             <div className="progress-percentage">
               75%
-                <div className="completed-bar">
+              <div className="completed-bar">
                 Completed
-                </div>
+              </div>
             </div>
           </div>
           <div className="right-item-container" key={`right-item-container-${item.item_id}`}>
