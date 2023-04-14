@@ -20,8 +20,8 @@ export default function BookItem() {
   }));
 
   useEffect(() => {
-    dispatch(fetchBooks())
-  },);
+    dispatch(fetchBooks());
+  });
 
   return (
     <>
@@ -46,10 +46,10 @@ export default function BookItem() {
             <span className="separator">|</span>
             <button className="button" aria-label="delete-button">Edit </button>
           </div>
-        </div>
+          </div>
         <div className="middle-item-container" key={`middle-item-container-${item.item_id}`}>
           <div className="progressbar-container">
-            <Progressbar percentage = {75} />
+            <Progressbar percentage={75} />
           </div>
           <div className="progress-percentage">
             75%
