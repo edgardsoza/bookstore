@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook, fetchBooks } from '../redux/books/booksSlice';
 import { CircularProgressbar } from 'react-circular-progressbar';
+import PropTypes from 'prop-types';
+import { removeBook, fetchBooks } from '../redux/books/booksSlice';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Progressbar = ({ percentage }) => (
   <div style={{ width: '100px' }}>
-    <CircularProgressbar value={percentage} />
+    <CircularProgressbar value={percentage=PropTypes.number.isRequired} />
   </div>
 );
 
@@ -19,15 +20,15 @@ export default function BookItem() {
   }));
 
   useEffect(() => {
-    dispatch(fetchBooks());
+    dispatch(fetchBooks())
   },);
 
   return (
     <>
       {booksArr.map((item) => (
-        <div className='main-container-books' key={`main-container-${item.item_id}`}>
-        <div className='left-item-container' key={`left-item-container-${item.item_id}`}>
-        <div className='book-box' key={`book-box-${item.item_id}`}>
+        <div className="main-container-books" key={`main-container-${item.item_id}`}>
+        <div className="left-item-container" key={`left-item-container-${item.item_id}`}>
+        <div className="book-box" key={`book-box-${item.item_id}`}>
         <ul className="book-item" key={`book-item-${item.item_id}`}>
         <li key={item.item_id}>
           <span className="category">{item[0].category}</span>

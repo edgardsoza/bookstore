@@ -23,9 +23,9 @@ export default function AddForm() {
     <div className="form-container">
       <h3 className="form-title">ADD NEW BOOK</h3>
       <form className="addabook" onSubmit={handleSubmit}>
-        <input className='formtitle' type="text" name="title" placeholder="Book title" value={title} onChange={handleTitleChange} />
-        <input className='formauthor' type="text" name="author" placeholder="Author" value={author} onChange={handleAuthorChange} />
-        <input className='formbutton' type="submit" value="ADD BOOK" />
+        <input className="formtitle" type="text" name="title" placeholder="Book title" value={title} onChange={handleTitleChange} />
+        <input className="formauthor" type="text" name="author" placeholder="Author" value={author} onChange={handleAuthorChange} />
+        <input className="formbutton" type="submit" value="ADD BOOK" />
       </form>
     </div>
   );
