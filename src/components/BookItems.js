@@ -40,24 +40,24 @@ export default function BookItem() {
             </ul>
           </div>
           <div className="buttons-box" key={`buttons-box-${item.item_id}`}>
-            <button className="button" aria-label="comment-button">Comment</button>
+            <button type="button" className="button" aria-label="comment-button">Comment</button>
             <span className="separator">|</span>
-            <button className="button" aria-label="remove-button" onClick={() => dispatch(removeBook(item.item_id))}>Remove</button>
+            <button type="button" className="button" aria-label="remove-button" onClick={() => dispatch(removeBook(item.item_id))}>Remove</button>
             <span className="separator">|</span>
-            <button className="button" aria-label="delete-button">Edit </button>
+            <button type="button" className="button" aria-label="delete-button">Edit </button>
           </div>
           </div>
-        <div className="middle-item-container" key={`middle-item-container-${item.item_id}`}>
-          <div className="progressbar-container">
-            <Progressbar percentage={75} />
-          </div>
-          <div className="progress-percentage">
-            75%
+          <div className="middle-item-container" key={`middle-item-container-${item.item_id}`}>
+            <div className="progressbar-container">
+              <Progressbar percentage={75} />
+            </div>
+            <div className="progress-percentage">
+              75%
             <div className="completed-bar">
             Completed
             </div>
+            </div>
           </div>
-        </div>
         <div className="right-item-container" key={`right-item-container-${item.item_id}`}>
           <span className="current-chapter" key={`current-chapter-${item.item_id}`}>
             CURRENT CHAPTER
