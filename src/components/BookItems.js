@@ -11,6 +11,10 @@ const Progressbar = ({ percentage }) => (
   </div>
 );
 
+Progressbar.propTypes = {
+  percentage: PropTypes.number.isRequired,
+};
+
 export default function BookItem() {
   const dispatch = useDispatch();
   const bookData = useSelector((state) => state.books);
