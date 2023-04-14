@@ -59,13 +59,13 @@ export default function BookItem() {
           </div>
         </div>
         <div className="right-item-container" key={`right-item-container-${item.item_id}`}>
-        <span className="current-chapter" key={`current-chapter-${item.item_id}`}>
-          CURRENT CHAPTER
-        </span>
-        <span className="chapter-info" key={`chapter-info-${item.item_id}`}>
-          Chapter 3: "A Lesson Learned"
-        </span>
-        <button className='button-update' aria-label="update-progress">UPDATE PROGRESS </button>
+          <span className="current-chapter" key={`current-chapter-${item.item_id}`}>
+            CURRENT CHAPTER
+          </span>
+          <span className="chapter-info" key={`chapter-info-${item.item_id}`}>
+            Chapter 3: A Lesson Learned
+          </span>
+          <button type="button" className="button-update" aria-label="update-progress">UPDATE PROGRESS </button>
         </div>
         </div>
       ))}
