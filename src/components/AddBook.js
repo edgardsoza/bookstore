@@ -12,7 +12,7 @@ export default function AddForm() {
     e.preventDefault();
     const URL_API = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/U8RwVDIGkwFcL15zoJWb/books';
     const book = {
-      title, author, category: 'fiction', item_id: Math.floor(Math.random() * 100000),
+      title, author, category: 'Fiction', item_id: Math.floor(Math.random() * 100000),
     };
     await axios.post(URL_API, book);
     setTitle('');
@@ -23,9 +23,9 @@ export default function AddForm() {
     <div className="form-container">
       <h3 className="form-title">ADD NEW BOOK</h3>
       <form className="addabook" onSubmit={handleSubmit}>
-        <input type="text" name="title" placeholder="Book title" value={title} onChange={handleTitleChange} />
-        <input type="text" name="author" placeholder="Author" value={author} onChange={handleAuthorChange} />
-        <input type="submit" value="ADD BOOK" />
+        <input className='formtitle' type="text" name="title" placeholder="Book title" value={title} onChange={handleTitleChange} />
+        <input className='formauthor' type="text" name="author" placeholder="Author" value={author} onChange={handleAuthorChange} />
+        <input className='formbutton' type="submit" value="ADD BOOK" />
       </form>
     </div>
   );

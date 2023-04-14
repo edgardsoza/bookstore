@@ -7,7 +7,10 @@ export default function BookList() {
       <div className="bookList-container">
         <BookItem />
       </div>
+    <div className='add-form'>
+      <hr className='breakline'></hr>
       <AddForm />
+    </div>
     </div>
   );
 }
